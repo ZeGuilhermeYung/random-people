@@ -4,7 +4,7 @@ import personRouter from "./person.routes";
 
 const router = Router();
 
-router.use(errorHandler);
 router.use(personRouter);
+router.use(errorHandler);
 
 export default router;
