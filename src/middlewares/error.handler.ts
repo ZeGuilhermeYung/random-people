@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import status from "http-status";
-import { Error } from "protocols/error.protocols";
+import { Error } from "../protocols/error.protocols";
 
 export default function errorHandler(error: Error, req: Request, res: Response, next: NextFunction) {
     console.log(error)

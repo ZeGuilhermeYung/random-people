@@ -3,5 +3,6 @@ export type Person = {
   firstName: string;
   lastName: string;
 }
+export type ObjectId = Omit<Person, "firstName" | "lastName">
 
-export type Ids = Array<number>;
+export type Ids = Array<ObjectId>;
